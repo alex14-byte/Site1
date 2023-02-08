@@ -1,0 +1,255 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+
+body, html{
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+body{
+	margin: 0;
+}
+
+@media (min-width:1200px)  {
+	.container{
+		width: 1172px;
+	}
+	
+}
+
+
+@media (min-width: 992px){
+	.container {
+		width: 960px;
+	}
+	.col-md-8{
+		float:inherit;
+	}
+	}
+@media (min-width: 768px){
+	.container {
+		width: 750px;
+	}
+}
+
+
+.container{
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 750px;
+
+}
+
+
+
+
+h1, .h1 , h2, .h2 , h3, .h3{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+}
+h1{
+	font-weight: 700;
+	font-size: 46px;
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #333333;
+}
+h3{
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 100;
+	line-height: 26px;
+}
+
+h4{
+	text-transform: uppercase;
+	font-size: 16px;
+	word-spacing: 2px;
+}
+h5{
+	text-transform: uppercase;
+	font-size: 12px;
+	word-spacing: 2px;
+}
+h6{
+	text-transform: uppercase;
+	font-size: 10px;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+}
+
+p{
+	font-weight: 400;
+	margin: 0 0 10px;
+	display: block;
+	font-size: 14px;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+
+}
+hr{
+	width: 50px;
+	border-color: #c59a6d;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height:0;
+	border-top: 1px solid #eee  ;
+	
+	
+}
+a {
+	color:#c0c0c0 ;
+	text-decoration: none;
+	
+	
+}
+a:hover,
+a:focus{
+	color: #c59a6d;
+	text-decoration: none;
+}
+
+#home{
+	
+	background:url("../img/bg1.jpg") ;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #ffffff;
+	min-height: 710px;
+	padding-top: 60px;
+	margin: 0;
+	
+}
+*{
+	box-sizing: border-box;
+}
+div{
+	display: block;
+}
+.page-content{
+	position: relative;
+	z-index: 0;
+}
+.navmenu{
+	top: 0;
+  	right: 0;
+  	bottom: 0;
+	position: fixed;
+	width: 270px;
+	background: #212427;
+	text-decoration: none;
+	left: -300px;
+	z-index: 10;
+
+	
+	
+}
+.navmenu ul{
+	list-style: none;
+	margin: 0;
+	pading: 0;
+}
+
+.navmenu li {
+	padding: 10px 15px;
+	position: relative;
+	display: block;
+	font-size: 14px;
+	
+
+}
+.margin{
+	margin-top: 200px;
+}
+.toggle{
+	text-decoration: none;
+	font-size: 30px;
+	-webkit-transition: all 0.15s ease-out 0;
+		-moz-transition: all 0.15s ease-out 0;
+			transition: all 0.15s ease-out 0;
+	position: fixed;
+	color: #c0c0c0;
+	left: 120px;
+	z-index: 1;
+	cursor: pointer;
+
+}
+.toggle:hover{
+	color: #c59a6d;
+}
+
+#sidebartoggler{
+	display: none;
+}
+
+#sidebartoggler:checked + .page-wrap .navmenu {
+    left: 0px; }
+
+#sidebartoggler:checked + .page-wrap .toggle {
+    display: none; }
+
+#meet-us{
+	padding: 60px 0;
+	min-height: 375px;
+	
+}
+.col-md-8{
+	
+}
+.text-center{
+	text-align: center;
+}
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#overview-video {
+    background: url("../img/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    text-align: center;
+	
+	
+}
+#overview-video .overlay {
+    background: rgba(34, 34, 34, 0.85);
+    height: auto;
+    min-height: 200px;
+    padding: 12% 0;
+	
+}
+
+.playarrow{
+	content: "\f04b" ;
+	z-index: 1;
+}
