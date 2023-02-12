@@ -8,7 +8,8 @@ body, html{
   overflow-y: auto;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
-  color: #333333;
+  color: #333;
+  font-size: 14px;
 }
 body{
 	margin: 0;
@@ -97,11 +98,6 @@ p{
 	font-weight: 400;
 	margin: 0 0 10px;
 	display: block;
-	font-size: 14px;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
 
 }
 hr{
@@ -109,14 +105,14 @@ hr{
 	border-color: #c59a6d;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	height:0;
 	border-top: 1px solid #eee  ;
-	
-	
+	border-left: 1px solid #eee  ;
+	border-right: 1px solid #eee ;
 }
-a {
-	color:#c0c0c0 ;
+li>a {
+	color:#ffffff ;
 	text-decoration: none;
+
 	
 	
 }
@@ -155,11 +151,11 @@ div{
   	bottom: 0;
 	position: fixed;
 	width: 270px;
-	background: #212427;
+	background: #1e2429;
 	text-decoration: none;
 	left: -300px;
 	z-index: 10;
-
+	transition: .3s;
 	
 	
 }
@@ -167,25 +163,27 @@ div{
 	list-style: none;
 	margin: 0;
 	pading: 0;
+	padding-inline-start: 0;
 }
 
 .navmenu li {
 	padding: 10px 15px;
 	position: relative;
 	display: block;
-	font-size: 14px;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 30px;
+	text-align: center;
 	
 
 }
+
 .margin{
 	margin-top: 200px;
 }
 .toggle{
 	text-decoration: none;
 	font-size: 30px;
-	-webkit-transition: all 0.15s ease-out 0;
-		-moz-transition: all 0.15s ease-out 0;
-			transition: all 0.15s ease-out 0;
 	position: fixed;
 	color: #c0c0c0;
 	left: 120px;
@@ -200,6 +198,9 @@ div{
 #sidebartoggler{
 	display: none;
 }
+
+
+
 
 #sidebartoggler:checked + .page-wrap .navmenu {
     left: 0px; }
@@ -252,4 +253,12 @@ div{
 .playarrow{
 	content: "\f04b" ;
 	z-index: 1;
+}
+
+.button-box{
+	size: 10px;
+	
+}
+.arrow{
+	content: "\f107";
 }
