@@ -11,15 +11,17 @@
 </head>
 <body>
   <input type="checkbox" id ="sidebartoggler">
-    <div class="page-wrap">
+    <div class ="page-wrap">
     <div class = "page-content">
-    
-    
-    
     <div class="navmenu">
+      <label for="sidebartoggler" class="close-sidemenu">
+      <div class="close">
+          <span class="fa fa-close"></span>
+      </div>  
+    </label>
       <div class="margin">
         <div class="text-center">
-
+           
         <ul>
           <li class="active"> 
             <a href="#home" class="page-scroll">Home</a>
@@ -45,9 +47,25 @@
     </div>        
     <div id="home">
         <div class="container text-center">
-          <nav id ="menu" data-target = ".navmenu">  
-                <label for ="sidebartoggler" class = "toggle">☰</label>
+          <nav id ="menu" data-target = ".navmenu">
+                <label for ="sidebartoggler" class = "toggle">
+                  <span class="fa fa-bars"></span>
+                </label>
           </nav>
+          <div class="content">
+            <h4>We've got the special power</h4>
+            <hr>
+            <div class="header-text btn">
+                <h1>
+                  <span id="head-title">         
+                  </span>
+                </h1>
+            </div>
+        </div>
+
+        <a href="#meet-us" class="down-btn page-scroll">
+            <span class="fa fa-angle-down"></span>
+        </a>
         </div>
       </div>
     <div id="meet-us">
@@ -66,21 +84,16 @@
            provident.
 
           </p>
-        </div>
-        <div class="buttonbox">
-         <a href="#services" class = "arrow">
-          
-         </a>
-        
-        </div>
+          <a href="#services" class="down-btn page-scroll">
+            <span class="fa fa-angle-down"></span>
+          </a>
+      </div>
       </div>
     </div>
     <div id="overview-video">
       <div class="overlay">
-        <div class="container">
-          <span class="">
-
-          </span>
+        <div class="container"><a href=""><span class="fa fa-play">
+        </span></a>
         </div>
       </div>
     </div>
@@ -101,8 +114,9 @@
           </p>
         </div>
         <div class="space"></div>
-        <div class="row">
+       
           <div class="col-3">
+          <div class="padding">
           <div class="service">
             <span class = "fa fa-book fa-3x"></span>
             <h4>Branding</h4>
@@ -112,7 +126,8 @@
               At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
           </div>
         </div>
-        <div class="col-3">
+        
+        <div class="padding">
           <div class="service">
             <span class = "fa fa-bicycle fa-3x"></span>
             <h4>Web devepment</h4>
@@ -120,8 +135,9 @@
               Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Accusamus et.
                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
           </div>
-        </div>
-        <div class="col-3">
+          </div>
+        
+          <div class="padding">
           <div class="service">
             <span class = "fa fa-plug fa-3x"></span>
             <h4>app design</h4>
@@ -130,8 +146,11 @@
                 Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
                Pellentesque ornare sem lacinia quam venenatis vestibulum. </p>
           </div>
+          </div>
         </div>
-        </div>
+        <a href="#services" class="down-btn page-scroll">
+          <span class="fa fa-angle-down"></span>
+        </a>
       </div>
     </div>
     <div id="cta">
@@ -140,7 +159,11 @@
       </div>
     </div>
     <div id="works">
-
+      <div class="container">
+        <div class="row text-center">
+          
+        </div>
+      </div>
     </div>
     <div id="clients">
 
@@ -159,5 +182,25 @@
     </div>
   </div>
   </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.1.11.1.js"></script>
+ 
+
+<script src="js/owl.carousel.js"></script>
+<script src="js/typed.js"></script>
+<script>
+  $(function(){
+      $("#head-title").typed({
+        strings: ["We make websites^1000", "24/7 available for hire^1000" ,"Web design with diffence^1000"],
+        typeSpeed: 100,
+        loop: true,
+        startDelay: 100
+      });
+  });
+</script>
+ 
+  
+
 </body>
 </html>
