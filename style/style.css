@@ -535,3 +535,40 @@ ul.clients li{
 	padding: 20px 40px;
 	vertical-align: middle;
 }
+.team img{
+	width: 80px;
+	margin: 0 auto;
+}
+.circle{
+	border-radius: 50%;
+}
+.team{
+	border: 1px solid #c3c3c3;
+	padding: 70px 20px;
+	opacity: 0.7;
+	transition: all 0.8s;
+	max-height: 340px;
+	margin-bottom: 30px;
+	width: 237px;
+}
+.teamhire{
+	border: 1px solid #c59a6d;
+	height: 340px;
+	color: #c59a6d;
+	opacity: 1;
+	width: 130px;
+	text-align: center;
+	padding: 70px 20px;
+	margin-bottom: 30px;
+}
+
+.team-cards{
+	flex-direction: row;
+	text-align: center;
+	margin: auto;
+	flex-wrap: wrap;
+}
+.teamhire a {
+	text-decoration: none;
+	
+}
